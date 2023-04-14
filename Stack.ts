@@ -5,7 +5,7 @@ export class Stack<G> {
     push(data: G) {
         this.list.push(data);
     }
-    pop(): G {
+    pop(): G | undefined {
         return this.list.pop();
     }
     size(): number {
